@@ -53,7 +53,7 @@ export default async function MovieContentPage({ params }: PageProps) {
     const rawBackdrop = movie.backdrop_path;
     const cleanBackdrop = rawBackdrop?.startsWith('/') ? rawBackdrop.slice(1) : rawBackdrop;
     const backdropUrl = cleanBackdrop
-      ? `https://image.tmdb.org/t/p/original/${cleanBackdrop}`
+      ? `https://image.tmdb.org/t/p/w1280/${cleanBackdrop}`
       : undefined;
 
     const rawPoster = movie.poster_path;

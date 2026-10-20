@@ -60,7 +60,7 @@ export default function Hero({ movies, movie }: HeroProps) {
     if (!raw) return "/fallback.jpg";
     if (raw.startsWith("http")) return raw;
     const clean = raw.startsWith("/") ? raw.slice(1) : raw;
-    return `https://image.tmdb.org/t/p/original/${clean}`;
+    return `https://image.tmdb.org/t/p/w1280/${clean}`;
   };
 
   return (

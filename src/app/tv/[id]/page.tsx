@@ -64,7 +64,7 @@ export default async function TVPage({ params }: PageProps) {
     const rawBackdrop = show.backdrop_path;
     const cleanBackdrop = rawBackdrop?.startsWith('/') ? rawBackdrop.slice(1) : rawBackdrop;
     const backdropUrl = cleanBackdrop
-      ? `https://image.tmdb.org/t/p/original/${cleanBackdrop}`
+      ? `https://image.tmdb.org/t/p/w1280/${cleanBackdrop}`
       : undefined;
 
     const rawPoster = show.poster_path;
